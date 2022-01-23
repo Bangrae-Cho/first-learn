@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Apply JavaScript example</title>
+    <!-- <script src = script.js defer></script> -->
+  </head>
+  <body>
+    <button>Click me</button>
+    <button>Click me!</button>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        function createParagraph() {
+            let para = document.createElement('p');
+            para.textContent = 'You clicked the button!';
+            document.body.appendChild(para);
+        }
+
+        const buttons = document.querySelectorAll('button');
+
+        for(let i = 0; i < buttons.length ; i++) {
+        buttons[i].addEventListener('click', createParagraph);
+        }
+        });
+    </script> -->
+    <script>
+        function createParagraph() {
+            let para = document.createElement('p');
+            para.textContent = 'You clicked the button!';
+            document.body.appendChild(para);
+        }
+        const buttons = document.querySelectorAll('button');
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', createParagraph);
+        }
+    </script>
+   <!-- <button>Click me!</button> Inline Script의 경우에도 위에서 순차적으로 수행함으로 Script보다 뒤에 있는 버튼은 Function을 수행하지 않음-->
+  </body>
+</html>

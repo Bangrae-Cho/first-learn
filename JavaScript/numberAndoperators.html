@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <meta charset ='utf-8'>
+        <title>Number and Operators</title>
+        <style>
+            table {border: 1px solid rgb(0,255,255)}
+            table>thead>tr>th {border: 1px solid rgb(0,255,255)}
+            table>tbody>tr>td {border: 1px solid rgb(0,255,255)}
+        </style>
+    </Head>
+    <body>
+        <h1>산술 연산자</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Name</th>
+                    <th>Pupose</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td>두 개의 숫자를 더합니다.</td>
+                    <td> 6 + 9</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtraction</td>
+                    <td>왼쪽에 있는 수를 오른쪽 수로<br>뺍니다.</td>
+                    <td> 20 - 15</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td>두 개의 숫자를 곱합니다.</td>
+                    <td> 3 * 7</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Division</td>
+                    <td>왼쪽의 숫자를 오른쪽 숫자<br>로 나눠서 몫을 구합니다.</td>
+                    <td> 10 / 5</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Remaind<br>or modulo</td>
+                    <td>왼쪽의 숫자를 오른쪽 숫자<br>로 나눠서 나머지를 구합니다.</td>
+                    <td> 8 % 3<br>2을 반환</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <br>
+        <h1>할당 연산자 Assignment operators</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Name</th>
+                    <th>Pupose</th>
+                    <th>Example</th>
+                    <th>shortcut for</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+=</td>
+                    <td>Addition<br>Assignment</td>
+                    <td>왼쪽의 변수 값에 오른쪽에 값을 추가한 다음<br>새 변수 값을 반환합니다..</td>
+                    <td> x = 3;<br> x += 4;</td>
+                    <td>x = 3;<br>x = x + 4;</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Subtraction<br>Assignment</td>
+                    <td>왼쪽의 변수 값에서 오른쪽값을 빼고 새 변수<br>값을 반환합니다.</td>
+                    <td> x = 6;<br> x -= 3;</td>
+                    <td>x = 6;<br>x = x - 3;</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiplication<br>Assignment</td>
+                    <td>왼쪽의 변수 값을 오른쪽 값으로 배수하고 새<br>변수 값을 반환합니다.</td>
+                    <td> x = 2;<br>x *= 3;</td>
+                    <td> x = 2;<br>x =x * 3;</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Division<br>Assignment</td>
+                    <td>왼쪽의 변수 값을 오른쪽 값으로 나누고 새 변수<br>값을 반환합니다.</td>
+                    <td> x = 10;<br>x /= 5;</td>
+                    <td> x = 10;<br>x =x / 5;</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h1>비교 연산자 Comparision operators</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Name</th>
+                    <th>Pupose</th>
+                    <th>Example</th>
+                    <!-- <th>shortcut for</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>===</td>
+                    <td>Strict equality</td>
+                    <td>Tests whether the left and right values are <br>identical to one another.</td>
+                    <td> 5 === 2 + 4</td>
+                    <!-- <td>x = 3;<br>x = x + 4;</td> -->
+                </tr>
+                <tr>
+                    <td>!==</td>
+                    <td>Strict-nonequality</td>
+                    <td>Tests whether the left and right values not<br>identical to one another</td>
+                    <td> 5 !== 2 + 3</td>
+                    <!-- <td>x = 6;<br>x = x - 3;</td> -->
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Less than</td>
+                    <td>Tests whether the left value is smaller than tne <br>right one.</td>
+                    <td> 10 < 6</td>
+                    <!-- <td> x = 2;<br>x =x * 3;</td> -->
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Greater than</td>
+                    <td>Tests whether the left value is greater than the<br>right one.</td>
+                    <td> 10 > 20</td>
+                    <!-- <td> x = 10;<br>x =x / 5;</td> -->
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Less than or equal to</td>
+                    <td>Tests whether the left value is smaller than or <br>equal to the right one.</td>
+                    <td> 3<= 2</td>
+                    <!-- <td> x = 10;<br>x =x / 5;</td> -->
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Greater than or <br>equal to</td>
+                    <td>Tests whether the left value is greater than or <br>equal to the right one.</td>
+                    <td> 5 >= 4</td>
+                    <!-- <td> x = 10;<br>x =x / 5;</td> -->
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var myInt = 5;
+            var myFloat = 6.667;
+            console.log(myInt);
+            console.log(myFloat);
+            console.log(typeof myInt);
+            console.log(typeof myFloat);
+        </script>
+        <button>start machine</button>
+        <p>The machine is stopped.</p>
+        <script>
+            var btn = document.querySelector('button');
+            var txt = document.querySelector('p');
+            btn.addEventListener('click', updateBtn);
+            function updateBtn() {
+                if (btn.textContent === 'Start machine') {
+                    btn.textContent = 'Stop machine';
+                    txt.textContent = 'The machine has started!';
+                }else{
+                    btn.textContent = 'Start machine';
+                    txt.textContent = 'The machine has stopped!';
+                }
+            }
+        </script>
+    </body>
+</html>

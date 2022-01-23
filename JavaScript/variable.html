@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Variable</title>
+    </head>
+    <body>
+        <button id = "button_A">press me</button>
+        <h3 id = "heading_A"></h3>
+        <script>
+            const buttonA = document.querySelector('#button_A');
+            const headingA = document.querySelector('#heading_A');
+
+            buttonA.onclick = () => {
+                const name = prompt ('What is your name?');
+                alert(`hell ${name}, nice to see you!`);
+                headingA.textContent = `Welcom ${name}`;
+            }
+        </script>
+        <button id = "button_B">press me</button>
+        <h3 id = "heading_B"></h3>
+        <script>
+            const buttonB = document.querySelector('#button_B');
+            const headingB = document.querySelector('#heading_B');
+            buttonB.onclick = () => {
+                //const name = prompt ('What is your name?');
+                alert(`hell ${prompt ('What is your name?')}, nice to see you!`);
+                headingB.textContent = `Welcome ${prompt ('What is your name?')}`;
+            }
+            var myName;
+            var myAge;
+            myName= 'bangrae';
+            myAge = -50;
+            //scoobyDoo;
+            console.log(`이름은 ${myName}이고, 나이는${myAge}입니다.`);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = "example.css">
+    <script src="inputevent.js"></script>
+</head>
+<body>
+    <table class = "test" contenteditable="true" id ="tab">
+        <thead>
+            <tr>
+                <th rowspan = "2">사번</th>
+                <th rowspan ="2">성명</th>
+                <th rowspan ="2">직급</th>
+                <th colspan = "2">회사</th>
+            </tr>
+            <tr>
+                <th class ="dep">부서명</th>
+                <th>전화번호</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20000585</td>
+                <td>조방래</td>
+                <td>기장</td>
+                <td>대형엔진조립1부</td>
+                <td>3-9957</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class = "exampleleft">
+        Integer elementum massa at nulla placert varius.
+        Suspendisse in libero risus, in interdum massa.
+        Vestibulum ac leo vitae metus faucibus fravida ac in neque.
+        Nullan est eros, suscipit sed dictum qius, accumsan aligula.
+    </p>
+    <div lang ="ko">
+        <p class ="wrapbox auto">auto:<br>가을하늘 공활한데 높고 구름없이<br>밝은 달은 우리 가슴 일편단심일세</p>
+        <p class ="wrapbox loose">loose:<br>가을하늘 공활한데 높고 구름없이<br>밝은 달은 우리 가슴 일편단심일세</p>
+        <p class ="wrapbox mormal">normal:<br>가을하늘 공활한데 높고 구름없이<br>밝은 달은 우리 가슴 일편단심일세</p>
+        <p class ="wrapbox strict">strict:<br>가을하늘 공활한데 높고 구름없이<br>밝은 달은 우리 가슴 일편단심일세</p>
+        <p class ="wrapbox anywhere">anywhere:<br>가을하늘 공활한데 높고 구름없이<br>밝은 달은 우리 가슴 일편단심일세</p>
+    </div>
+    <p id = "log">Input Type:</p>
+    <div contenteditable="true" style="margin: 20px; padding: 20px; border: 2px dashed red;">
+        <p>some of text. try inserting line breaks, or deleting text in different ways, or pasting different content in.</p>
+        <hr>
+        <ul>
+            <li>A sample</li>
+            <li>bulleted</li>
+            <li>list.</li>
+        </ul>
+        <p>Another paragraph.</p>
+    </div>
+</body>
+</html>

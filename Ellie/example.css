@@ -1,0 +1,14 @@
+.exampleleft{
+    text-align: left;
+    border: solid;
+}
+table{border-collapse: collapse;}
+th {border: 1px solid black}
+td {border: 1px solid black}
+.dep{text-align: justify;}
+.wrapbox{width: 7em; margin: 0.5em; white-space: normal; vertical-align: top; display: inline-block}
+.auto {line-break: auto;}
+.loose {line-break: loose;}
+.normal {line-break: normal;}
+.strict {line-break: strict;}
+.anywhere {line-break: anywhere;}
