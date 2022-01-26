@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='kr'>
+    <head>
+        <meta charset = "UTF-8">
+        <title>How to adjust for trigger system</title>
+    </head>
+    <body>
+        <div class = 'info'>
+            <h1>Parts Overview</h1>
+            <p>***Caution***</p>
+            <p>Trigger sensors are detection by continuesly turning by turning gear or engine running. <br> mean, can't check sensor's work by touching </p>
+            <image src = "Overview.png" alt = 'workplace' usemap ='#workmap' width = '450' height='400'>parts Overview</image>
+            <svg width="300" height="100">
+                <defs>
+                    <marker id='arrow' markerWidth = '13' markerHeight = '13' refx = '3' refy = '6' orient = 'auto'>
+                        <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                    </marker>
+                </defs>
+                <path d='M30, 1 L100,50'
+                      style = 'stroke:red; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+            </svg>
+            <map name ="workmap">
+                <area shape = 'rect' coords='215,85,225,110' alt='Trig Sensor Q1A' rel='trig'>
+                <area shape = 'rect' coords='210,5,225,60' alt='Trig Sensor Q1A' href="trigring.html">                
+            </map>
+        </div>
+        <div class = "trig" >
+            <ul sytle='padding-left:-50px;text-indent:-4px'>
+                <li>What is Encoder?<br>Encoder main function is reading angle of Crank shaft for define control timing</li>
+                <li>How many signals are in a Encoder?<br>basically, 4 signals in a Encoder<br>Mark 1(Reading 180degree)<br>Makr 2(Reading 180Degree)<br>
+                    Quadrature 1(Reading 360 pulse in 1 revolution)<br>
+                    Quadrature 2(Reading 360 pulse in 1 revolution. 0.5degree different angle from Quadrature 1)</li>
+                <li>How to adjust gap and position?<br>
+                    <ol>
+                        <li>For Q1A</li>
+                        <li>Turn the engine to TDC1.</li>
+                        <image src= 'Adjust tool.png' width = '250' height = 'auto'></image>
+                        <li>Making touch the Adjusting tool bottom on trig ring each teethes by Adjusting bolt</li>
+                        <image src= 'Add Adjust tool.png' width = '300' height = 'auto'></image>
+                        <li> Check that the diode of the Q1A-sensor points directly towards the trigger ring tangent line in the opposite <br>
+                        direction of engine's main running direction. if this is not the case, <br>
+                        then loosen the sensor nouts and turn the sensor about its symmetrical axis to obtain the above diode position.<br>
+                        Please note that th Q-signals are extremely sensitive to the sensor's rotational position.</li>
+                        <image src= 'Sensor Direction.png' width = '300' height = 'auto'></image>
+                        <li>Repeat the above for the remaining Q-sensors.</li>
+                        <li>Loosen the screws holding the mountin plate for the Q1A pickup box to the main tacho bracket.</li>
+                        <li>Position the Q1 sensor box with mounting plate the gap evenly on both sides of the sensor.<br>
+                        The adjustment tool will ensure a radial distance of 1 mm for from the tip of the trigger ring teeth to the sensor head.<br>
+                        Add a feeler gauge of 0.5mm between the sensor head and the adjustment tool so the final distance is 1.5 mm between the sensor and the trigger ring.</li>
+                        <li>Tighten the screws firmly to secure the mounting plate with pick-up box in a locked position.</li>
+                        <li>Remove the tool.</li>
+                        <li>Loosen the screws holding the mounting plate for the Q2A pick-up box to the main tacho bracket.<br>
+                        <li>Position the Q2A sensor box with mounting plate in the Q2 slot on adjustment tool.<br>
+                        The slot is slightly wider than the sensor head diameter, so distribue the gap envenly on both sides of the sensor.<br>
+                        Add a feeler gauge of 0.5 mm between the sensor head and the adjustment tool so the final distance is 1.5 mm between the sensor and the trigger ring.</li>
+                        <li>Tighten the screws firmly to secure the mounting plate with pick-up box in a lock position.</li>
+                        <li>Remove the tool.</li>
+                        <li>Repeat the operation for the Q1/2B sensors.</li>
+                </ol>
+                </li>
+            </ul>
+            <image src= 'trig.png' witdh='500' height = 'auto'>
+        </div>
+    </body>
+</html>
