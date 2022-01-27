@@ -5,32 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>How to adjust for trigger system</title>
         <style>
-            .info {
-                position: relative;
-            }
-            .test {
-                position: relative;
-            }
-            .text-box {
-                position:absolute;
-                top: 20px;
-                left: 20px;
-                background-color: black;
-                color: white;
-                padding-left: -200px;
-                padding-right: -200px;
-            }
-            .triginfo {
-                border: 1px solid;
-                position:absolute;
-                top: 80px;
-                left: 180px;
-                background-color: black;
-                color: white;
-                padding-top: auto;
-                padding-top: 0px;
-                /* padding-right: 0px; */
-            }
+            
+            .info {position: relative;}
+            .test {position: relative;}
+            .text-box {position:absolute;top: 20px;left: 20px;background-color: black;color: white;padding-left: -200px;padding-right: -200px;}
+            .trigQ1AInfo {border: 1px solid; position:absolute; top: 73px; left: 50px; background-color: black; color: white; padding: 0;}
+            .trigQ2AInfo {border: 1px solid; position:absolute; top: 148px; left: 50px; background-color: black; color: white; padding: 0;}      
+            .trigQ1BInfo {border: 1px solid; position:absolute; top: 222px; left: 50px; background-color: black; color: white; padding: 0;}
+            .trigQ2BInfo {border: 1px solid; position:absolute; top: 298px; left: 50px; background-color: black; color: white; padding-top: 0px; padding-bottom: 0px;}
+            .MMA {border: 1px solid; position:absolute; top: 80px; left: 400px; background-color: black; color: white; padding: 0;}
+            .MMB {border: 1px solid; position:absolute; top: 298px; left: 400px; background-color: black; color: white; padding: 0;}
+            .trigRing {border: 1px solid; position:absolute; top: 30px; left: 18px; background-color: black; color: white; padding: 0;}
+            .markRing  {border: 1px solid; position:absolute; top: 15px; left: 400px; background-color: black; color: white; padding: 0;}         
+            .arrow {position: absolute; top: 30px; left: 30px;}
+            .arrow1 {position: absolute; top: 80px; left: 30px;}
+            .arrow2 {position: absolute; top: 135px; left: 30px; padding: 0;}
+            .arrow3 {position: absolute; top: 185px; left: 30px; padding:0;}
+            .arrow4 {position: absolute; top: 40px; left: 300px; padding: 0;}
+            .arrow5 {position: absolute; top: 230px; left: 300px; padding:0;}
+            .arrow6 {position: absolute; top: 15px; left: 30px;}
+            .arrow7 {position: absolute; top: 10px; left: 280px; padding:0;}
         </style>
     </head>
     <body>
@@ -39,21 +33,85 @@
             <p>***Caution***</p>
             <p>Trigger sensors are detection by continuesly turning by turning gear or engine running. <br> mean, can't check sensor's work by touching </p>
         </div>
-        <div class = 'info'>
+        <div class = 'info' width = '450' height = '400'>
             <div class='overview'></div>
                 <img src = "Overview.png" alt = 'workplace' usemap ='#workmap' width = '450' height='400'>
-                <svg width="300" height="100">
+                <svg class = 'arrow' width="300" height="75">
                     <defs>
-                        <marker id='arrow' markerWidth = '13' markerHeight = '13' refx = '3' refy = '6' orient = 'auto'>
+                        <marker id='arrow' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
                             <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
                         </marker>
                     </defs>
-                    <path d='M300, 1 L100,50'
-                        style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+                    <path d='M50, 70 L180,70' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
                 </svg>
-                <div class = 'triginfo'>
-                    <p>Q1A</p>
-                </div>
+                <svg class = 'arrow1' width="300" height="100">
+                    <defs>
+                        <marker id='arrow1' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
+                            <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                        </marker>
+                    </defs>
+                    <path d='M50, 95 L185,95' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+                </svg>
+                <svg class = 'arrow2' width="300" height="150">
+                    <defs>
+                        <marker id='arrow2' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
+                            <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                        </marker>
+                    </defs>
+                    <path d='M50, 115 L185,115' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+                </svg>
+                <svg class = 'arrow3' width="300" height="200">
+                    <defs>
+                        <marker id='arrow3' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
+                            <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                        </marker>
+                    </defs>
+                    <path d='M50, 140 L180,140' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow3);'/>
+                </svg>
+                <svg class = 'arrow4' width="300" height="75">
+                    <defs>
+                        <marker id='arrow4' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
+                            <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                        </marker>
+                    </defs>
+                    <path d='M100, 70 L10,70' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+                </svg>
+                <svg class = 'arrow5' width="300" height="100">
+                    <defs>
+                        <marker id='arrow5' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
+                            <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                        </marker>
+                    </defs>
+                    <path d='M100, 95 L10,95' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+                </svg>
+                <svg class = 'arrow6' width="300" height="100">
+                    <defs>
+                        <marker id='arrow6' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
+                            <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                        </marker>
+                    </defs>
+                    <path d='M50, 45 L180,45' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+                </svg>
+                <svg class = 'arrow7' width="300" height="100">
+                    <defs>
+                        <marker id='arrow7' markerWidth = '13' markerHeight = '13' refx = '5' refy = '6' orient = 'auto'>
+                            <path d='M2,1 L2,10 L10,6 L2,2' style = 'fill:red;'/>
+                        </marker>
+                    </defs>
+                    <path d='M120, 45 L10,45' style = 'stroke:blue; stroke-width: 1.25px; fill: none; marker-end:url(#arrow);'/>
+                </svg>
+                <!-- <div class = 'trigQ1AInfo'> div 적용 시 위 아래에 space가 발생되어 모양이 별로이고 Padding이 먹지 않음-->
+                    <p class = 'trigRing'>Trig Ring</p>
+                    <p class = 'markRing'>Mark<br>Rings</p>
+                    <p class = 'trigQ1AInfo'>Q1A</p>
+                <!-- </div> -->
+                <!-- <div class = 'trigQ2AInfo'> -->
+                    <p class = 'trigQ2AInfo'>Q2A</p>
+                    <p class = 'trigQ1BInfo'>Q1B</p>
+                    <p class = 'trigQ2BInfo'>Q2B</p>
+                    <p class = 'MMA'>MMA</p>
+                    <p class = 'MMB'>MMB</p>
+                <!-- </div> -->
                 <map name ="workmap">
                     <area shape = 'rect' coords='215,85,225,110' alt='Trig Sensor Q1A' href='#trig'>
                     <area shape = 'rect' coords='210,5,225,60' alt='Trig Sensor Q1A' href="trigring.html">                
@@ -70,7 +128,7 @@
                     <ol>
                         <li>For Q1A</li>
                         <li>Turn the engine to TDC1.</li>
-                        <image src= 'Adjust tool.png' width = '250' height = 'auto'></image>
+                        <image src= 'Adjust tool.png' alt= 'A13-774261-0.0 Measuring Tool 6072065-3.0' width = '250' height = 'auto'></image>
                         <li>Making touch the Adjusting tool bottom on trig ring each teethes by Adjusting bolt</li>
                         <image src= 'Add Adjust tool.png' width = '300' height = 'auto'></image>
                         <li> Check that the diode of the Q1A-sensor points directly towards the trigger ring tangent line in the opposite <br>
